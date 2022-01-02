@@ -17,17 +17,21 @@ public class Operaciones {
         System.out.println("================");
         System.out.println("función de suma");
         System.out.println("================");
+
         sumar.Operation(a,b);
+
+
+
+        // método para entregar el cubo de ambos números
+        IOperation cubo = (f, g) ->{
+                System.out.println("Número "+f+" elevado al cubo: "+Math.pow(f,3));
+                System.out.println("Número "+g+" elevado al cubo: "+Math.pow(g,3));
+        };
 
 
         System.out.println("\n================");
         System.out.println("función de cubo ");
         System.out.println("================");
-        IOperation cubo = (f, g) ->{
-                System.out.println("Número "+f+" elevado al cubo: "+Math.pow(f,3));
-                System.out.println("Número "+g+" elevado al cubo: "+Math.pow(g,3));
-
-        };
 
         cubo.Operation(5,4);
 
